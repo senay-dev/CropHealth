@@ -54,7 +54,7 @@ if uploaded_file is not None:
     	st.write("This is a **crop that has leaf rust!**")
     if prediction == 2:
     	st.write("This is a **crop that has stem rust!**")
-    #st.image(image, caption='Uploaded Image.', use_column_width=True)
+    st.image(image.resize((240,240)), caption='Uploaded Image.', use_column_width=True)
 #st.write("")
 #image = Image.open("Data/Test/" + imageselect)
 #st.image(image, caption="Let's predict the health of this crop!", use_column_width=True)
