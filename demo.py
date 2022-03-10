@@ -42,9 +42,9 @@ st.write("When you're ready, submit a prediction.")
 
 uploaded_file = st.file_uploader("Choose an image...")
 if uploaded_file is not None:
-    image = Image.open(uploaded_file).resize((240, 240))
+    image = Image.open(uploaded_file).resize((480,480))
     image_arr = img_to_array(image)
-    image_arr= np.reshape(image_arr, [1,240,240,3])
+    image_arr= np.reshape(image_arr, [1,480,480,3])
     
     label = model.predict(image_arr)
     prediction = np.argmax(label)
