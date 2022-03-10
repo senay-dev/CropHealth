@@ -11,7 +11,7 @@ from tensorflow.keras.utils import img_to_array
 
 showpred = 0
 try:
-	model_path = 'Classification/model_80.h5'
+	model_path = 'model_80.h5'
 except: 
 	print("Need to train model")
 test_path = 'Data/Test'
